@@ -252,6 +252,7 @@ RCT_EXPORT_METHOD(getAlbums:(NSDictionary *)params
                   reject:(RCTPromiseRejectBlock)reject)
 {
   NSString *const mediaType = [params objectForKey:@"assetType"] ? [RCTConvert NSString:params[@"assetType"]] : @"All";
+  NSString *const albumType = [params objectForKey:@"albumType"] ? [RCTConvert NSString:params[@"albumType"]] : @"Album";
     NSLog(@"type: %@", mediaType);
   NSMutableArray * result = [NSMutableArray new];
   NSString *__block fetchedAlbumType = nil;
