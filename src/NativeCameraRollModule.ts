@@ -17,6 +17,7 @@ export type AlbumSubType =
 type Album = {
   title: string;
   count: number;
+  type: string;
   subtype?: AlbumSubType;
 };
 
